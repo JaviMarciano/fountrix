@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/logo.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <title>Fountrix</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
+
+  
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header" class="transparent-nav">
+    <div class="container">
+
+      <div class="navbar-header">
+        <!-- Logo -->
+        <div class="navbar-brand">
+          <h1 href="index.html" class="white-text main-title" style="font-size:30px;">
+            Fountrix
+          </h1>
+        </div>
+        <!-- /Logo -->
+        <!-- Mobile toggle -->
+        <button class="navbar-toggle">
+          <span></span>
+        </button>
+        <!-- /Mobile toggle -->
+      </div>
+
+      <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+        <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarSupportedContent">
+
+          <ul class="main-menu nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /Navigation -->
+
+    </div>
+  </header>
+  <!-- /Header -->
+  <!-- Home -->
+  <div id="home" class="hero-area">
+
+    <!-- Backgound Image -->
+    <div class="bg-image bg-parallax overlay" style="background-image:url(../assets/home-background.jpg)"></div>
+    <!-- /Backgound Image -->
+
+    <div class="home-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h1 class="white-text">A SOFTWARE DEVELOPMENT COMPANY</h1>
+            <p class="lead white-text">
+              We have the experience and the expertise to build your custom web & mobile solutions.
+              IT consulting, software development and testing is what we do.
+            </p>
+            <a class="main-button icon-button" href="#">Get Started!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /Home -->
+  <!-- About -->
+  <div id="about" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="section-header">
+            <h2>Welcome to Fountrix</h2>
+            <p class="lead">
+              a Software Development Company with a focus on solutions for enterprises & startups
+            </p>
+          </div>
+
+          <!-- feature -->
+          <div class="feature">
+            <i class="feature-icon fas fa-globe-americas"></i>
+            <div class="feature-content">
+              <h4>NEARSHORE SOFTWARE DEVELOPMENT</h4>
+              <p>Don’t think too much, outsource our software application developer to enhance the efficiency and quality of your software projects.</p>
+            </div>
+          </div>
+          <!-- /feature -->
+          <!-- feature -->
+          <div class="feature">
+            <i class="feature-icon fa fa-desktop"></i>
+            <div class="feature-content">
+              <h4>CUSTOM SOFTWARE SOLUTIONS</h4>
+              <p>No matter whether you are a startup or an fully established business, our software development firm is here to guide you in every stage of software development life cycle.</p>
+            </div>
+          </div>
+          <!-- /feature -->
+          <!-- feature -->
+          <div class="feature">
+            <i class="feature-icon fa fa-comments"></i>
+            <div class="feature-content">
+              <h4>MANAGED SERVICES & DEVOPS</h4>
+              <p>By outsourcing our software development services, you can easily focus on your business and let us worry the rest.</p>
+            </div>
+          </div>
+          <!-- /feature -->
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="about-img">
+            <img src="../assets/about.png" alt="">
+          </div>
+        </div>
+
+      </div>
+      <!-- row -->
+
+    </div>
+    <!-- container -->
+  </div>
+  <!-- /About -->
+  <!-- Courses -->
+  <!-- /Courses -->
+  <!-- Call To Action -->
+  <div id="cta" class="section">
+
+    <!-- Backgound Image -->
+    <div class="bg-image bg-parallax overlay" style="background-image:url(../assets/cta1-background.jpg)"></div>
+    <!-- /Backgound Image -->
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2 class="white-text">WE CREATE MOBILE APPS THAT ARE VISUALLY STUNNING!</h2>
+          <p class="lead white-text">Our Mobile Application Development Process begins with fluid customer journeys in mind. We know it’s not only about Mobile App Development that put checks on your requirements, but an experience that your user can cherish for a long time and that’s what we strive to achieve here at Fountrix.</p>
+          <a class="main-button icon-button" href="#">Get Started!</a>
+        </div>
+
+      </div>
+      <!-- /row -->
+
+    </div>
+    <!-- /container -->
+
+  </div>
+  <!-- /Call To Action -->
+  <!-- Why us -->
+  <div id="why-us" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+        <div class="section-header text-center">
+          <h2>HOW WE WORK</h2>
+        </div>
+
+        <!-- feature -->
+        <div class="col-md-6">
+          <div class="feature">
+            <i class="feature-icon fas fa-desktop"></i>
+            <div class="feature-content">
+              <h4>AGILE SOFTWARE DEVELOPMENT</h4>
+              <p>Our agile software development solution will give quick and continuous delivery of worthy softwares.We follow scrum methodology to achieve best results and manage all the project stakeholders in sync.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /feature -->
+        <!-- feature -->
+        <div class="col-md-6">
+          <div class="feature">
+            <i class="feature-icon fa fa-users"></i>
+            <div class="feature-content">
+              <h4>REGULAR CALLS & MEETINGS</h4>
+              <p>We give our clients real time communication, quick reaction time and easy accessibility to anywhere, everywhere. Our team of experts software developers are just one call away to give you technical support, fix bugs and guides you.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /feature -->
+        <!-- feature -->
+        <div class="col-md-6">
+          <div class="feature">
+            <i class="feature-icon fas fa-user-graduate"></i>
+            <div class="feature-content">
+              <h4>BEST DEVELOPMENT PRACTICE</h4>
+              <p>Working with us, the best software application development company you can completely rely on with the stable demo environment, virtuoso QA and testing, always accessible with safe and secured code and quick deploying.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="feature">
+            <i class="feature-icon fas fa-user-tie"></i>
+            <div class="feature-content">
+              <h4>HIGH PERSONAL INVOLVEMENT</h4>
+              <p>Our motto is “Clients is the family.” We are the best software development firm because we love to serve our clients and take our clients success, achievements as of our own. We truly believe in personal interaction with the client to create a trust bridge.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /feature -->
+
+      </div>
+
+
+    </div>
+    <!-- /container -->
+
+  </div>
+  <!-- /Why us -->
+  <!-- Contact CTA -->
+  <div id="contact-cta" class="section">
+
+    <!-- Backgound Image -->
+    <div class="bg-image bg-parallax overlay" style="background-image:url(../assets/cta2-background.jpg)"></div>
+    <!-- Backgound Image -->
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <h2 class="white-text">Contact Us</h2>
+          <p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
+          <a class="main-button icon-button" href="#">Contact Us Now</a>
+        </div>
+
+      </div>
+      <!-- /row -->
+
+    </div>
+    <!-- /container -->
+
+  </div>
+
+  <div id="courses" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+        <div class="section-header text-center">
+          <h2>TECHNOLOGY WE USE</h2>
+        </div>
+      </div>
+      <!-- /row -->
+      <!-- courses -->
+      <div id="courses-wrapper">
+
+        <!-- row -->
+        <div class="row">
+
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course01.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course02.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course03.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course05.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course06.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course07.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+          <!-- /single course -->
+
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course04.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /single course -->
+
+
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course09.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <!-- single course -->
+          <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="course">
+              <a href="#" class="course-img">
+                <img src="../assets/course08.jpg" alt="">
+                <i class="course-link-icon fa fa-link"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- container -->
+
+  </div>
+  <!-- /Contact CTA -->
+  <div class="container">
+
+
+  </div>
+  <!-- /container -->
+  <!-- Footer -->
+  <footer id="footer" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+
+        <!-- footer logo -->
+        <div class="col-md-6">
+          <div class="footer-logo">
+            <h1 href="index.html">
+              Fountrix
+            </h1>
+          </div>
+        </div>
+        <!-- footer logo -->
+        <!-- footer nav -->
+        <div class="col-md-6">
+          <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /footer nav -->
+
+      </div>
+      <!-- /row -->
+      <!-- row -->
+      <div id="bottom-footer" class="row">
+
+        <!-- social -->
+        <div class="col-md-4 col-md-push-8">
+          <ul class="footer-social">
+            <li><a href="https://www.facebook.com/fountrix/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/fountrix/" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <!-- /social -->
+        <!-- copyright -->
+        <div class="col-md-8 col-md-pull-4">
+          <div class="footer-copyright">
+            <span>&copy; Copyright 2018. All Rights Reserved. | FOUNTRIX</span>
+          </div>
+        </div>
+        <!-- /copyright -->
+
+      </div>
+      <!-- row -->
+
+    </div>
+    <!-- /container -->
+
+  </footer>
+  <!-- /Footer -->
+  <!-- preloader -->
+  <!-- /preloader -->
+  <!-- jQuery Plugins -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
