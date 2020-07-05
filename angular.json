@@ -23,10 +23,9 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/style.css",
-              "src/font-awesome.min.css",
-              "src/bootstrap.min.css"
+            "styles": [              
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/style.css"
             ],
             "scripts": [
               "src/js/jquery.min.js",

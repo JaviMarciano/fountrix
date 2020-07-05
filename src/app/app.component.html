@@ -12,12 +12,8 @@
 
   <!-- Google font -->
   <link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
-
-  
-
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -34,30 +30,32 @@
         <!-- Logo -->
         <div class="navbar-brand">
           <h1 href="index.html" class="white-text main-title" style="font-size:30px;">
+            <img src="../assets/logo.png" class="img-logo" />
             Fountrix
           </h1>
         </div>
-        <!-- /Logo -->
-        <!-- Mobile toggle -->
-        <button class="navbar-toggle">
-          <span></span>
-        </button>
-        <!-- /Mobile toggle -->
       </div>
-
-      <nav class="navbar navbar-expand-md navbar-light bg-light" id="nav">
+      <nav class="navbar navbar-expand-md navbar-light float-right">
         <button class="navbar-toggler" type="button" (click)="navbarCollapsed = !navbarCollapsed" [attr.aria-expanded]="!navbarCollapsed" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" [ngbCollapse]="navbarCollapsed" id="navbarSupportedContent">
-
+      
           <ul class="main-menu nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="nav-item" (click)="navbarCollapsed = !navbarCollapsed">
+              <a href="#about" class="menu-item">
+                HOME
+              </a>
+            </li>
+            <li class="nav-item" (click)="navbarCollapsed = !navbarCollapsed">
+              <a href="#contact-us" class="menu-item">
+                CONTACT
+              </a>
+            </li>                
           </ul>
         </div>
       </nav>
+      
       <!-- /Navigation -->
 
     </div>
@@ -79,7 +77,6 @@
               We have the experience and the expertise to build your custom web & mobile solutions.
               IT consulting, software development and testing is what we do.
             </p>
-            <a class="main-button icon-button" href="#">Get Started!</a>
           </div>
         </div>
       </div>
@@ -88,7 +85,7 @@
   </div>
   <!-- /Home -->
   <!-- About -->
-  <div id="about" class="section">
+  <div  class="section">
 
     <!-- container -->
     <div class="container">
@@ -96,7 +93,7 @@
       <!-- row -->
       <div class="row">
 
-        <div class="col-md-6">
+        <div class="col-md-6" id="about">
           <div class="section-header">
             <h2>Welcome to Fountrix</h2>
             <p class="lead">
@@ -164,7 +161,6 @@
         <div class="col-md-6">
           <h2 class="white-text">WE CREATE MOBILE APPS THAT ARE VISUALLY STUNNING!</h2>
           <p class="lead white-text">Our Mobile Application Development Process begins with fluid customer journeys in mind. We know it’s not only about Mobile App Development that put checks on your requirements, but an experience that your user can cherish for a long time and that’s what we strive to achieve here at Fountrix.</p>
-          <a class="main-button icon-button" href="#">Get Started!</a>
         </div>
 
       </div>
@@ -183,7 +179,7 @@
 
       <!-- row -->
       <div class="row">
-        <div class="section-header text-center">
+        <div class="section-header col-12 d-flex justify-content-center ">
           <h2>HOW WE WORK</h2>
         </div>
 
@@ -193,7 +189,7 @@
             <i class="feature-icon fas fa-desktop"></i>
             <div class="feature-content">
               <h4>AGILE SOFTWARE DEVELOPMENT</h4>
-              <p>Our agile software development solution will give quick and continuous delivery of worthy softwares.We follow scrum methodology to achieve best results and manage all the project stakeholders in sync.</p>
+              <p>Our agile software development solution will give quick and continuous delivery of worthy softwares. We follow scrum methodology to achieve best results and manage all the project stakeholders in sync.</p>
             </div>
           </div>
         </div>
@@ -246,15 +242,13 @@
     <div class="bg-image bg-parallax overlay" style="background-image:url(../assets/cta2-background.jpg)"></div>
     <!-- Backgound Image -->
     <!-- container -->
-    <div class="container">
+    <div class="container" id="contact-us">
 
       <!-- row -->
       <div class="row">
 
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <h2 class="white-text">Contact Us</h2>
-          <p class="lead white-text">Libris vivendo eloquentiam ex ius, nec id splendide abhorreant.</p>
-          <a class="main-button icon-button" href="#">Contact Us Now</a>
+        <div class="col-md-12 col-md-offset-2 text-center">
+          <h2 class="white-text">Contact Us</h2>      
         </div>
 
       </div>
@@ -264,7 +258,9 @@
     <!-- /container -->
 
   </div>
-
+  <div class="container" >
+    <app-contact></app-contact>
+  </div>
   <div id="courses" class="section">
 
     <!-- container -->
@@ -272,7 +268,7 @@
 
       <!-- row -->
       <div class="row">
-        <div class="section-header text-center">
+        <div class="section-header text-center col-12">
           <h2>TECHNOLOGY WE USE</h2>
         </div>
       </div>
@@ -385,12 +381,6 @@
     <!-- container -->
 
   </div>
-  <!-- /Contact CTA -->
-  <div class="container">
-
-
-  </div>
-  <!-- /container -->
   <!-- Footer -->
   <footer id="footer" class="section">
 
@@ -403,7 +393,9 @@
         <!-- footer logo -->
         <div class="col-md-6">
           <div class="footer-logo">
+           
             <h1 href="index.html">
+              <img src="../assets/logo.png" class="img-logo"/>
               Fountrix
             </h1>
           </div>
@@ -412,9 +404,16 @@
         <!-- footer nav -->
         <div class="col-md-6">
           <ul class="footer-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li>
+              <a href="#about">
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="#contact-us">
+                CONTACT
+              </a>
+            </li>
           </ul>
         </div>
         <!-- /footer nav -->
@@ -427,8 +426,8 @@
         <!-- social -->
         <div class="col-md-4 col-md-push-8">
           <ul class="footer-social">
-            <li><a href="https://www.facebook.com/fountrix/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/fountrix/" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.facebook.com/fountrix/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/fountrix/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
           </ul>
         </div>
         <!-- /social -->

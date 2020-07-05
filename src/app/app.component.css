@@ -1,4 +1,16 @@
 .main-title{
-    margin-top: -5px;
+    margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.menu-item{
+    color: #fff;
+}
+
+.navbar-toggler {
+    right: 10px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    left: auto;
+    float: right;
 }
