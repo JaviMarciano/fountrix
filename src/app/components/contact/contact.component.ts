@@ -34,9 +34,10 @@ export class ContactComponent implements OnInit {
   get f() { return this.form.controls; }
 
   submit() {
-    this.isSubmitingData = true;
+
     this.submitted = true;
     if (this.form.valid) {
+      this.isSubmitingData = true;
       const contact = <Contact>this.form.value;
       var request = new XMLHttpRequest();
       request.onreadystatechange = () => { this.onReadyStateChange(request) };

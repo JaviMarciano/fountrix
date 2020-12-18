@@ -501,36 +501,6 @@ textarea {
   transition: 0.2s opacity;
 }
 
-.course .course-img:hover:after {
-  opacity: 0.7;
-}
-
-.course .course-img .course-link-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, calc(-50% - 15px));
-  -ms-transform: translate(-50%, calc(-50% - 15px));
-  transform: translate(-50%, calc(-50% - 15px));
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  opacity: 0;
-  z-index: 10;
-  -webkit-transition: 0.2s all;
-  transition: 0.2s all;
-}
-
-.course .course-img:hover .course-link-icon {
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 1;
-}
 
 .course .course-title {
   display: block;
@@ -1202,7 +1172,7 @@ textarea {
   .navbar ul {
     background-color: #000000c7;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 
@@ -1318,5 +1288,5 @@ body {
 }
 
 .img-logo {
-  width: 25px;
+  width: 40px;
 }
